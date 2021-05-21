@@ -13,23 +13,23 @@ import React from "react";
 // const sig = CryptoJS.HmacSHA384(signature, apiSecret).toString();
 
 function App() {
-  React.useEffect(() => {
-    getTicker();
-  }, []);
+  // React.useEffect(() => {
+  //   getTicker();
+  // }, []);
 
-  function getTicker() {
-    fetch(
-      "https://api-pub.bitfinex.com/v2/tickers?symbols=tBTCUSD,tLTCUSD,fUSD",
-      {
-        method: "GET",
-      }
-    )
-      .then((res) => res)
-      .then((json) => console.log("RESPONSAS: ", json))
-      .catch((err) => {
-        console.log("ERRORAS: ", err);
-      });
-  }
+  // function getTicker() {
+  //   fetch(
+  //     "https://api-pub.bitfinex.com/v2/tickers?symbols=tBTCUSD,tLTCUSD,fUSD",
+  //     {
+  //       method: "GET",
+  //     }
+  //   )
+  //     .then((res) => res)
+  //     .then((json) => console.log("RESPONSAS: ", json))
+  //     .catch((err) => {
+  //       console.log("ERRORAS: ", err);
+  //     });
+  // }
 
   // function getWallet() {
   //   fetch(`${apiHost}${apiPath}`, {
